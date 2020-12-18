@@ -1,12 +1,18 @@
 import React from 'react';
 export const Nav = () => {
+	const style = {
+		backgroundColor:"rgb(9, 28, 41)"
+	}
 	return (
-		<nav className='flex h-auto bg-blue-700 justify-around text-white shadow-2xl' >
-			<h3 className="mt-4 text-shadow font-bold text-2xl"> Home </h3>
-			<ul className="flex m-0 font- justify-around w-3/12 text-xl ">
-				<li className="bg-transparent transition-all rounded-full m-4 px-5 hover:bg-blue-800 hover:shadow-2xl cursor-pointer">About</li>
-				<li className="bg-transparent transition-all rounded-full m-4 px-5 hover:bg-blue-800 hover:shadow-2xl cursor-pointer" >Contact</li>
-			</ul>
-		</nav>
+		<div className="flex items-center py-2 justify-around w-full mx-auto text-white font-dosis" style={style}>
+			<h1 className="font-bold text-3xl">Ayman
+			<span className="h-5 w-5 bg-red-500 rounded-full inline-block ml-2"></span>
+			</h1>
+			<div >
+				<span className="text-xl mr-4">Stack</span>
+				<span className="text-xl mr-4">Project</span>
+				<span className="text-xl mr-4">Contact</span>
+			</div>
+		</div>
 	);
 };
