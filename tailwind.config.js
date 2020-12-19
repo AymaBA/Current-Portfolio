@@ -11,6 +11,7 @@ module.exports = {
 		},
 		animation:{
 			float: 'float 3s infinite',
+			refloat: 'float 3s infinite 1s',
 		},
 		keyframes: {
 			float: {
@@ -25,6 +26,9 @@ module.exports = {
 				},
 			}
 		},
+		transitionDuration: {
+			'2000': '2000ms',
+		}
   },
   variants: {
     extend: {},
