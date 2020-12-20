@@ -5,30 +5,30 @@ function Stack() {
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-center font-dosis" id="stack">
 			<h1 className="font-bold text-5xl ">Stack I use</h1>
-			<div className="flex flex-wrap justify-center mt-10">
-				<span className="w-40 animate-float bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
+			<div className="flex flex-wrap justify-center ">
+				<span className="w-40 animate-float select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
 						src={process.env.PUBLIC_URL + 'assets/mongo.png'}
 					/>
 				</span>
-				<span className="w-40 animate-refloat bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
+				<span className="w-40 animate-refloat select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
 						src={process.env.PUBLIC_URL + 'assets/express.png'}
 					/>
 				</span>
-				<span className="w-40 animate-float delay-700 bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
+				<span className="w-40 animate-float select-none delay-700 bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
 						src={process.env.PUBLIC_URL + 'assets/react.svg'}
 					/>
 				</span>
-				<span className="w-40 animate-refloat bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
+				<span className="w-40 animate-refloat select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
 						src={process.env.PUBLIC_URL + 'assets/node.png'}
 					/>
 				</span>
 			</div>
-			<p className="w-11/12 text-xl md:max-w-xl text-center mt-10">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur quis quod? Quia ipsum, molestiae impedit rerum error maxime aliquid id deserunt dicta quidem. Dolor, obcaecati nulla? Molestias, dolorem tempore.
+			<p className="w-11/12 md:text-2xl md:max-w-xl text-center md:mb-0 mt-10 mb-5">
+			The main technologies that I use for the backend part of an application are: MongoDB for the databases, Express for the management of a rest API and NodeJS. For the frontend part I squeeze React. One of the advantages of these backend technologies is to have the same rest API for all customers. So the possibility of also creating a mobile or computer application later.
 			</p>
 		</div>
 	)
