@@ -14,6 +14,7 @@ export default function Header() {
 		}} id="header">
 			<div className="flex flex-col items-center md:flex-row-reverse justify-around w-11/12">
 					<LazyLoadImage
+						className="md:h-screen"
 						src={process.env.PUBLIC_URL + 'assets/57114259-removebg-preview.png'}
 						effect="blur"
 						placeholderSrc={process.env.PUBLIC_URL +'/logo512.png'}
