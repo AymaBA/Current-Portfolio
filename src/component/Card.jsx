@@ -6,7 +6,7 @@ export default function Card({ title, description, githubUrl, imageUrl, projectU
         <div className="flex md:flex-wrap md:w-3/12 flex-col bg-black p-5 rounded-lg shadow-2xl text-white m-5" style={{ background: 'rgb(9, 28, 41)' }}>
             <a href={projectUrl} className="flex" target="blank">
                 <LazyLoadImage
-                    className={`rounded-lg max-h-full object-cover ${projectUrl ? "hover:scale-95 cursor-pointer" : ""} select-none transform duration-200`}
+                    className={`rounded-lg max-h-60 md:max-h-full max-w-60 object-cover ${projectUrl ? "hover:scale-95 cursor-pointer" : ""} select-none transform duration-200`}
                     src={imageUrl}
                 />
             </a>
