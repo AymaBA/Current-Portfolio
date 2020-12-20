@@ -10,7 +10,7 @@ function Project() {
 					<Card 
 						title="Post-it" 
 						description="Just a simple website that anyone can post things on." 
-						githubUrl="https://github.com/AymaBA/post-it" 
+						githubUrl="https://github.com/AymaBA/post-it"
 						imageUrl={process.env.PUBLIC_URL+"assets/post-it.png"}
 					/>
 				</div>

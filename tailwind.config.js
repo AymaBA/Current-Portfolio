@@ -12,6 +12,7 @@ module.exports = {
 		animation:{
 			float: 'float 3s infinite',
 			refloat: 'float 3s infinite 1s',
+			spawn:'spawn 1s'
 		},
 		keyframes: {
 			float: {
@@ -24,6 +25,17 @@ module.exports = {
 				'100%': { transform: 'translateY(0)',
 					animationTimingFunction:'ease-in-out'
 				},
+			},
+			spawn: {
+				'0%': { transform: 'translateX(-40px)',
+					opacity:0,
+					animationTimingFunction:'ease-in-out'
+				},
+
+				'100%': { transform: 'translateX(0)',
+					opacity:1,
+					animationTimingFunction:'ease-in-out'
+				}
 			}
 		},
 		transitionDuration: {

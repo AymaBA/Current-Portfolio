@@ -7,20 +7,22 @@ export default function Header() {
 	const [animated, setAnimated] = useState(false);
 	useEffect(() => {
 		setAnimated(true);
-	}, [])
+	},[])
 	return (
 		<div className="min-h-screen flex items-center justify-center " style={{
 			backgroundColor: "rgb(9, 28, 41)",
 		}} id="header">
 			<div className="flex flex-col items-center md:flex-row-reverse justify-around w-11/12">
+				
 				<LazyLoadImage
-					className="lg:h-screen select-none"
+					className={`md:animate-spawn transform duration-2000 ease-in-out lg:h-screen select-none`}
 					src={process.env.PUBLIC_URL + 'assets/57114259-removebg-preview.png'}
 					effect="blur"
 					placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}
 				/>
+				
 				<div className="text-white text-center md:text-left">
-					<h2 className={`${animated ? "" : "translate-y-10 opacity-0"} transform transition duration-2000 ease-in-out md:text-4xl text-3xl lg:text-6xl font-bold font-dosis md:text-left`}>Hi !<br /> I'm full stack JS developer</h2>
+					<h2 className={`${animated ? "" : "translate-x-10 opacity-0"} transform transition duration-2000 ease-in-out md:text-4xl text-3xl lg:text-6xl font-bold font-dosis md:text-left`}>Hi !<br /> I'm full stack JS developer</h2>
 					<br />
 					<h1>
 						<Typical
