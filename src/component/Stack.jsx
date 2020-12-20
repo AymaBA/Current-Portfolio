@@ -28,7 +28,7 @@ function Stack() {
 				</span>
 			</div>
 			<p className="w-11/12 md:text-2xl md:max-w-xl text-center md:mb-0 mt-10 mb-5">
-			The main technologies that I use for the backend part of an application are: MongoDB for the databases, Express for the management of a rest API and NodeJS. For the frontend part I squeeze React. One of the advantages of these backend technologies is to have the same rest API for all customers. So the possibility of also creating a mobile or computer application later.
+			The main technologies I use for the backend part of an application are: MongoDB for the databases, Express for the management of a rest API and NodeJS, for the frontend part, I use React and for the deployment i can use nginx or netlify depending on the project. One of the benefits of these backend technologies is having the same rest API for all customers. So the possibility of also creating a mobile or computer application later.
 			</p>
 		</div>
 	)
