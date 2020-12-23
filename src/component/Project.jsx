@@ -13,6 +13,13 @@ function Project() {
 						githubUrl="https://github.com/AymaBA/post-it"
 						imageUrl={process.env.PUBLIC_URL+"assets/post-it.png"}
 					/>
+					<Card 
+						title="Cloudbudget Integration" 
+						projectUrl="https://cloudbudget-ayman.netlify.app/"
+						description="Integration of a figma web model with React and Snowpack of HTML and CSS." 
+						githubUrl="https://github.com/AymaBA/Cloudbudget-Integration"
+						imageUrl={process.env.PUBLIC_URL+"assets/cloudbudget.png"}
+					/>
 				</div>
 			</div>
 		</div>
