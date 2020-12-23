@@ -2,18 +2,33 @@ import React, { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link as ScrollLink } from 'react-scroll';
 import Typical from 'react-typical'
+import './Loader.css'
 
 export default function Header() {
 	const [animated, setAnimated] = useState(false);
 	useEffect(() => {
 		setAnimated(true);
 	},[])
+	window.addEventListener('load',() => {
+		document.querySelector('.loader-container').style.opacity = 0
+		setTimeout(function() {
+			document.querySelector('.loader-container').style.display = 'none'
+		},2000)
+	})
 	return (
+		<>
+		<div className="loader-container">
+        <div className="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 		<div className="min-h-screen flex items-center justify-center " style={{
 			backgroundColor: "rgb(9, 28, 41)",
 		}} id="header">
 			<div className="flex flex-col items-center md:flex-row-reverse justify-around w-11/12">
-				
 				<LazyLoadImage
 					className={`md:animate-spawn transform duration-2000 ease-in-out lg:h-screen select-none`}
 					src={process.env.PUBLIC_URL + 'assets/57114259-removebg-preview.png'}
@@ -36,5 +51,6 @@ export default function Header() {
 				</div>
 			</div>
 		</div>
+		</>
 	)
 }

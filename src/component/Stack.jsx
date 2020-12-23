@@ -8,21 +8,25 @@ function Stack() {
 			<div className="flex flex-wrap justify-center ">
 				<span className="w-40 animate-float select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
+						effect="blur"
 						src={process.env.PUBLIC_URL + 'assets/mongo.png'}
 					/>
 				</span>
 				<span className="w-40 animate-refloat select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
+						effect="blur"
 						src={process.env.PUBLIC_URL + 'assets/express.png'}
 					/>
 				</span>
 				<span className="w-40 animate-float select-none delay-700 bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
+						effect="blur"
 						src={process.env.PUBLIC_URL + 'logo512.png'}
 					/>
 				</span>
 				<span className="w-40 animate-refloat select-none bg-white shadow-2xl m-2 rounded-full flex items-center p-5">
 					<LazyLoadImage
+						effect="blur"
 						src={process.env.PUBLIC_URL + 'assets/node.png'}
 					/>
 				</span>
