@@ -18,8 +18,9 @@ function Project() {
           <Card
             title="Suplit"
             description="Application allowing you to purchase and sell non-use course supplies."
+            projectUrl="https://suplit.tk/"
             githubUrl="https://github.com/AymaBA"
-            imageUrl={process.env.PUBLIC_URL + "assets/suplit.wepb"}
+            imageUrl={process.env.PUBLIC_URL + "assets/suplit.png"}
           />
           <Card
             title="Post-it"
